@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import {useState} from 'react';
 import{AiOutlineClose} from 'react-icons/ai';
 import{AiOutlineMenu} from 'react-icons/ai';
 import { Link } from 'react-scroll';

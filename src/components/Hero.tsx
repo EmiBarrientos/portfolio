@@ -1,4 +1,3 @@
-import React from "react";
 import profilepic from "../assets/IMG_profpic.png";
 import { TypeAnimation} from "react-type-animation";
 import ShinyEffect from "./ShinyEffect.tsx";

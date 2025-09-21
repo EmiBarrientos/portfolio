@@ -1,4 +1,4 @@
-import React from "react";
+
 import project1 from "../assets/MyDoctorApp_video.mp4"
 import project2 from "../assets/Propiedades-360.png"
 import project3 from "../assets/Tp-3-Progra.mov"
@@ -7,9 +7,8 @@ import project5 from "../assets/Popurri De proyectos.mov"
 import project6 from "../assets/BarberiaAluraImg.png"
 import project7 from "../assets/ComingSoon.png"
 
-import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
+import { AiOutlineGithub } from 'react-icons/ai'
 import Reveal from "./Reveal";
-import type { video } from "framer-motion/client";
 
 
 const projects = [
