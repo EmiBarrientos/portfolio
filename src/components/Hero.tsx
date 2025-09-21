@@ -4,13 +4,11 @@ import { TypeAnimation} from "react-type-animation";
 import ShinyEffect from "./ShinyEffect.tsx";
 import {
     AiOutlineGithub,
-    AiOutlineInstagram,
     AiOutlineLinkedin,
 } from "react-icons/ai";
 
 import{
     DiJava,
-    DiHtml5,
     DiJavascript1,
     DiNodejs,
     DiReact
@@ -35,11 +33,11 @@ const Hero = () => {
                 
                 <TypeAnimation
                     sequence={[
-                        "Fullstack Developer",
+                        "Desarrollador fullstack",
                         1000,
-                        "Software engineer",
+                        "Ingeniero de Software",
                         1000,
-                        "Consultant",
+                        "Backend Developer",
                         1000
 
                     ]}
@@ -57,7 +55,7 @@ const Hero = () => {
                     transition={{duration:1, delay:0.5}}
                     className="text-gray-200 md:text-7xl text-5x1 tracking-tight mb-4"        
                     >
-                    Hey, mi nombre es<br/>
+                    Hola, mi nombre es<br/>
                     <span className="text-purple-500"> EMILIANO BARRIENTOS</span>
                     
                 </motion.p>
@@ -83,21 +81,29 @@ const Hero = () => {
                     <motion.button whileHover={{scale:1.05, boxShadow:"0px 0px 8px rgba(0, 0, 0, 0.2)" }}
                         className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p4 border
                          border-purple-400 rounded-4"
+                         
                     
                     >
-                        Download CV
+                        <motion.a
+                            whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)" }}
+                            href="/Emiliano Barrientos Desarrollador Backend.pdf"
+                            download
+                            className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto px-4 py-2 border
+                                        border-purple-400 rounded-lg bg-purple-600 hover:bg-purple-700 transition"
+                            >
+                            Download CV
+                            </motion.a>
+                        
                     </motion.button>
 
                     <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
-                        <motion.a whileHover={{scale:1.2}} href="#">
+                        <motion.a whileHover={{scale:1.2}} href="https://github.com/EmiBarrientos">
                             <AiOutlineGithub/>
                         </motion.a>
-                         <motion.a whileHover={{scale:1.2}} href="#">
+                         <motion.a whileHover={{scale:1.2}} href="https://www.linkedin.com/in/emiliano-barrientos">
                             <AiOutlineLinkedin/>
                         </motion.a>
-                         <motion.a whileHover={{scale:1.2}} href="#">
-                            <AiOutlineInstagram/>
-                        </motion.a>
+                        
                     </div>
                 </motion.div>
             </motion.div>
@@ -121,24 +127,34 @@ const Hero = () => {
         
         >
             <p className="text-gray-200 mr-6">Mi Stack Tecnologico</p>
-            <DiJava  className="text-orange-600 mx-2" />
-            <SiSpringboot  className="text-blue-600 mx-2" />
-            <DiJavascript1 className="text-yellow-500 mx-2" />
-            <DiReact className="text-blue-500 mx-2" />
-            <DiNodejs className="text-green-500 mx-2" />
-
+            
+              <div className="flex flex-wrap justify-center md:justify-start">
+                <motion.div whileHover={{ scale: 1.2 }} className="mx-2">
+                <DiJava className="text-orange-600 text-6xl md:text-7xl" title="Java" />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }} className="mx-2">
+                <SiSpringboot className="text-blue-600 text-6xl md:text-7xl" title="Spring Boot" />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }} className="mx-2">
+                <DiJavascript1 className="text-yellow-500 text-6xl md:text-7xl" title="JavaScript" />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }} className="mx-2">
+                <DiReact className="text-blue-500 text-6xl md:text-7xl" title="React" />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }} className="mx-2">
+                <DiNodejs className="text-green-500 text-6xl md:text-7xl" title="Node.js" />
+                </motion.div>
+            </div>
 
         </motion.div>
             
 
-        <div className="relative">
-            <div className="absolute inset-0 hidden md:block">
+        <div className="absolute inset-0 hidden md:block">
                 <ShinyEffect left={0} top={0} size={1400} />
-            </div>
         </div>
-
-
+        
     </div>
+    
     )
 }
 

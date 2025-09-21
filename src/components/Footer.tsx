@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithubSquare, FaInstagram } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 
 const Footer=()=>{
     return(
@@ -7,10 +7,9 @@ const Footer=()=>{
             <div className="space-y-4">
                 <h3 className="text-2xl text-gray-200 font-semibold"> Emi Barrientos</h3>
                 <div className="flex flex-row gap-6 text-gray-400 textt-4xl">
-                    <a href="#"><FaGithubSquare/></a>
-                    <a href="#"><FaInstagram/></a>
-
-
+                    <a href="https://github.com/EmiBarrientos"><FaGithubSquare/></a>
+                    <a href="https://www.linkedin.com/in/emiliano-barrientos/"><FaLinkedinIn/></a>
+                    
                 </div>
 
             </div>
