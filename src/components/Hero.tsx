@@ -85,12 +85,12 @@ const Hero = () => {
                     >
                         <motion.a
                             whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)" }}
-                            href="/Emiliano Barrientos Desarrollador Backend.pdf"
+                            href="/Emiliano Barrientos Software Developer.pdf"
                             download
                             className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto px-4 py-2 border
                                         border-purple-400 rounded-lg bg-purple-600 hover:bg-purple-700 transition"
                             >
-                            Download CV
+                            Descargar cv
                             </motion.a>
                         
                     </motion.button>
