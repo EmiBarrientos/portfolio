@@ -21,10 +21,30 @@ import {
   }from "react-icons/si";
 
 import { RiVercelLine } from "react-icons/ri";
+import Reveal from "./Reveal";
+
+interface SkillsProps{
+  language: "es" | "en";
+}
 
 
+const texts = {
+  es: {
+    
+    tools: "Herramientas ",
+    description: "Trabajé en varios proyectos Fullstack. Miralos",
+    here: "Aqui",
+    
+  },
+  en: {
+    
+    tools: "Tools",
+    description: "I worked on several Fullstack projects. Check them out",
+    here: "here",
+  }
+};
 
-  import Reveal from "./Reveal";
+
 
 const skills = [
     {
@@ -65,13 +85,14 @@ const skills = [
 
 
 
-const Skills = () => {
+const Skills = ({ language }: SkillsProps) => {
+  const t=texts[language];
     return(
         <div className=" max-w-[650px] mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12" id="skills">
-            <h2 className="text-3xl font-bold text-center">Herramientas</h2>
+            <h2 className="text-3xl font-bold text-center">{t.tools} </h2>
             <Reveal>
             <p className="text-center mb-8">
-                Trabajé en varios proyectos Fullstack. Miralos  <a href="#portfolio" className="underline">aqui</a>.
+                {t.description}  <a href="#portfolio" className="underline">{t.here}</a>.
             </p>
             <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 ">
                 {

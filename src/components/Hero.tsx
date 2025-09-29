@@ -14,33 +14,59 @@ import{
 } from "react-icons/di";
 
 import { SiSpringboot } from "react-icons/si";
-
-
-
 import{motion} from "framer-motion";
 
-const Hero = () => {
+interface HeroProps {
+  language: "es" | "en";
+}
+
+
+const texts = {
+  es: {
+    sequence: [
+      "Desarrollador fullstack",
+      1000,
+      "Ingeniero de Software",
+      1000,
+      "Backend Developer",
+      1000
+    ],
+    hello: "¡Hola! Mi nombre es ",
+    description: "Soy un apasionado por el desarrollo de software con 2 años de experiencia",
+    download: "Descargar CV",
+    stack: "Mi Stack Tecnologico"
+  },
+  en: {
+    sequence: [
+      "Fullstack Developer",
+      1000,
+      "Software Engineer",
+      1000,
+      "Backend Developer",
+      1000
+    ],
+    hello: "Hi! My name is",
+    description: "I'm passionate about software development with 2 years of experience",
+    download: "Download CV",
+    stack: "My Tech Stack"
+  }
+};
+
+
+const Hero = ({ language }: HeroProps) => {
+    const t = texts[language];
     return (
         <div className="mt-24 max-[1200px] mx-auto relative">
             <div className="grid md:grid-cols-2 place-items-center gap-8">
                 <motion.div
-                initial={{opacity: 0, y : -50}}
-                whileInView={{opacity:1, y:0}}
-                viewport={{once: true}}
-                transition={{duration:1}}
+                    initial={{opacity: 0, y : -50}}
+                    whileInView={{opacity:1, y:0}}
+                    viewport={{once: true}}
+                    transition={{duration:1}}
                 >
                 
                 <TypeAnimation
-                    sequence={[
-                        "Desarrollador fullstack",
-                        1000,
-                        "Ingeniero de Software",
-                        1000,
-                        "Backend Developer",
-                        1000
-
-                    ]}
-
+                    sequence={t.sequence}
                     speed={50}
                     repeat={Infinity}
                     className="font-bold text-gray-400 text-xl md:text-5x1 italic- mb-4"
@@ -54,7 +80,7 @@ const Hero = () => {
                     transition={{duration:1, delay:0.5}}
                     className="text-gray-200 md:text-7xl text-5x1 tracking-tight mb-4"        
                     >
-                    Hola, mi nombre es<br/>
+                    {t.hello}<br/>
                     <span className="text-purple-500"> EMILIANO BARRIENTOS</span>
                     
                 </motion.p>
@@ -66,7 +92,7 @@ const Hero = () => {
                     transition={{duration:1, delay:1}}
                     className="text-gray-300 max-[300px] md:max-w-[500px]: md:text-2xl text-lg  mb-6"        
                     >
-                        Soy un apasionado por el desarrollo de software con 3 años de experiencia 
+                        {t.description}<br /> 
                     
                 </motion.p >
                     
@@ -85,12 +111,12 @@ const Hero = () => {
                     >
                         <motion.a
                             whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)" }}
-                            href="/Emiliano Barrientos Software Developer.pdf"
+                            href={language === "es" ? "/Emiliano Barrientos Desarrollador Backend.pdf" : "/Emiliano Barrientos Backend Developer.pdf"}
                             download
                             className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto px-4 py-2 border
                                         border-purple-400 rounded-lg bg-purple-600 hover:bg-purple-700 transition"
                             >
-                            Descargar cv
+                           {t.download}
                             </motion.a>
                         
                     </motion.button>
@@ -125,7 +151,7 @@ const Hero = () => {
             className=" flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
         
         >
-            <p className="text-gray-200 mr-6">Mi Stack Tecnologico</p>
+            <p className="text-gray-200 mr-6">{t.stack} </p>
             
               <div className="flex flex-wrap justify-center md:justify-start">
                 <motion.div whileHover={{ scale: 1.2 }} className="mx-2">
