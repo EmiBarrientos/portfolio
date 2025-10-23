@@ -8,6 +8,22 @@ interface ExperienceProps{
 
 const experiences =[
     {
+        
+        company:{
+                es: 'Freelance',
+                en: 'Freelance'
+        },
+        period: {
+                es: 'junio 2025 - Actualidad',
+                en: 'June 2025 - Currently'
+        },
+        description:{
+            es:'Desarrollo de aplicaciones web y APIs REST con Java (Spring Boot) y PostgreSQL. \n\nImplementación de microservicios y despliegues en AWS RDS y Render. \n\nGestión de proyectos para clientes pequeños y startups, cubriendo todo el ciclo de desarrollo: diseño, backend, pruebas y deploy.',
+            en:'Development of web applications and REST APIs with Java (Spring Boot) and PostgreSQL.\n\nImplementation of microservices and deployments on AWS RDS and Render.\n\nProject management for small clients and startups, covering the entire development cycle: design, backend, testing, and deployment.'
+        }
+    },
+    {
+        
         company:{
                 es: 'Atomicat-Tech',
                 en: 'Atomicat-Tech'
@@ -34,21 +50,8 @@ const experiences =[
             es: 'Prácticas Laborales\n\n Bajo el marco de estas prácticas desarrollé myDoctorApp y propiedades 360',
             en:'internship\n\n As part of this work experience, I developed myDoctorApp and 360 properties.'
         }
-    },
-    {
-        company:{
-                es: '¡Con vos! ',
-                en: 'With you!'
-        },
-        period: {
-            es: 'Octubre 2025 - Indefinido ',        
-            en: 'Octubre 2025 - undefined '
-        },
-        description:{
-            es: 'En tu Empresa voy a aportar todas mis habilidades técnicas al equipo. \nMi creatividad, mi constancia y mi entrega están a disposición para alcanzar todas las metas que nos propongamos',
-            en:  'I will bring all my technical skills to your companys team. My creativity, perseverance, and dedication are at your disposal to achieve all the goals we set for ourselves.'         
-        }
     }
+    
 ]
 
 

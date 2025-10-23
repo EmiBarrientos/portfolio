@@ -24,15 +24,15 @@ interface HeroProps {
 const texts = {
   es: {
     sequence: [
-      "Desarrollador fullstack",
+      "Fullstack Developer",
       1000,
-      "Ingeniero de Software",
+      "Software Engineer",
       1000,
       "Backend Developer",
-      1000
+      1000,
     ],
     hello: "¡Hola! Mi nombre es ",
-    description: "Soy un apasionado por el desarrollo de software con 2 años de experiencia",
+    description: "Busco crecer como Backend / Cloud Engineer, contribuyendo en la arquitectura y despliegue de sistemas escalables.\n\n Tambien disfruto del Front-end porque me ayuda a entender el producto completo.",
     download: "Descargar CV",
     stack: "Mi Stack Tecnologico"
   },
@@ -43,10 +43,10 @@ const texts = {
       "Software Engineer",
       1000,
       "Backend Developer",
-      1000
+      1000,
     ],
     hello: "Hi! My name is",
-    description: "I'm passionate about software development with 2 years of experience",
+    description: "I am looking to grow as a Backend/Cloud Engineer, contributing to the architecture and deployment of scalable systems. \n\nI also enjoy front-end development because it helps me understand the entire product.",
     download: "Download CV",
     stack: "My Tech Stack"
   }
@@ -90,7 +90,7 @@ const Hero = ({ language }: HeroProps) => {
                     whileInView={{opacity:1}}
                     viewport={{once: true}}
                     transition={{duration:1, delay:1}}
-                    className="text-gray-300 max-[300px] md:max-w-[500px]: md:text-2xl text-lg  mb-6"        
+                    className="text-gray-300 max-[300px] md:max-w-[500px]: md:text-2xl text-lg  mb-6 whitespace-pre-line"        
                     >
                         {t.description}<br /> 
                     
