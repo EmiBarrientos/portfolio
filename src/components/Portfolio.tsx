@@ -5,7 +5,7 @@ import project3 from "../assets/Tp-3-Progra.mov"
 import project4 from "../assets/GestionDeEmpleados_video.mov"
 import project5 from "../assets/Popurri De proyectos.mov"
 import project6 from "../assets/BarberiaAluraImg.png"
-import project7 from "../assets/ComingSoon.png"
+import project7 from "../assets/menAtWork.jpg"
 
 import { AiOutlineGithub } from 'react-icons/ai'
 import Reveal from "./Reveal";
