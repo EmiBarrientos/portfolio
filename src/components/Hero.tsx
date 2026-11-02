@@ -32,7 +32,7 @@ const texts = {
       1000,
     ],
     hello: "¡Hola! Mi nombre es ",
-    description: "Busco crecer como Backend / Cloud Engineer, contribuyendo en la arquitectura y despliegue de sistemas escalables.\n\n Tambien disfruto del Front-end porque me ayuda a entender el producto completo.",
+    description: "Desarrollador Backend Java · Spring Boot\n\nConstruyo APIs y sistemas con microservicios, seguridad con JWT, tests y Docker.\n También trabajo con React y Node.js. Busco mi próxima oportunidad como desarrollador backend.",
     download: "Descargar CV",
     stack: "Mi Stack Tecnologico"
   },
@@ -46,7 +46,7 @@ const texts = {
       1000,
     ],
     hello: "Hi! My name is",
-    description: "I am looking to grow as a Backend/Cloud Engineer, contributing to the architecture and deployment of scalable systems. \n\nI also enjoy front-end development because it helps me understand the entire product.",
+    description: "Backend Developer · Java · Spring Boot\n\nI build APIs and microservices-based systems with JWT security, testing and Docker.\nI also work with React and Node.js. I’m looking for my next opportunity as a backend developer.",
     download: "Download CV",
     stack: "My Tech Stack"
   }

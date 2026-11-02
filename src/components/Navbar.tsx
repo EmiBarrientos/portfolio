@@ -45,7 +45,7 @@ const Navbar= ({ language, setLanguage }: NavbarProps) => {
         <div className='fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50'> 
             <div className='max-w-[1300px] mx-auto flex justify-between text-gray-200
             text-x1 items-center px-12 h-20 '>
-                <a href='#' >Emi Barrientos</a>
+                <a href='#' >Emiliano Barrientos</a>
                   <button onClick={toggleLanguage}>
                         {language === "es" ? "English" : "Español"}
                 </button>

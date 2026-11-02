@@ -9,7 +9,7 @@ const texts = {
     
     about: "Sobre ",
     me:"Mi",
-    description: "Me considero un apasionado por el mundo del desarrollo de software, poseo experiencia como desarrollador Backend, utilizando lenguajes como Java, principalmente, y asimismo JavaScript y NodeJS.\n\nTengo una curiosidad inagotable que me impulsa a adquirir nuevos conocimientos.\n\n Mi principal área de interés es el desarrollo Backend, pero no es la única.\n Además poseo un gran entusiasmo por el submundo DevOps y CyberSec, lo que me impulsa a seguir investigando sobre estas áreas y también me permite desarrollar productos mas seguros.\n\n Mi experiencia como co-founder me brindó la posibilidad de expandir mi visión del producto.\n\n Mi perfil es dinámico y orientado a resultados, apunto a la excelencia y a la calidad a la hora de escribir software, además puedo estar presente en todo el ciclo de vida del desarrollo de software, desde el frontend hasta el despliegue, pasando por el backend.\n\n\nMi rápido aprendizaje, mi curiosidad y mi actitud autodidacta me permiten indagar sobre múltiples áreas, pero mi amor más grande está en el Backend.\n\n",
+    description: "Soy desarrollador backend con foco en Java y Spring Boot.\n\nTrabajé en equipo con Scrum, rehabilité y desplegué una aplicación completa, y hoy desarrollo un sistema de microservicios con arquitectura hexagonal, seguridad con JWT y tests.\n\n También tengo experiencia con React y Node.js. Estudio la Tecnicatura en Programación en la UTN y tengo inglés C1.\n\n",
     
     
   },
@@ -17,7 +17,7 @@ const texts = {
     
     about: "About ",
     me:"Me",
-    description: "I consider myself passionate about the world of software development. I have experience as a backend developer, mainly using languages such as Java, as well as JavaScript and NodeJS.\n\n My main area of interest is backend development, but it is not the only one.\n I am also very enthusiastic about the DevOps and CyberSec subworld, which drives me to continue researching these areas and also allows me to develop more secure products. \n\n My experience as a co-founder gave me the opportunity to expand my vision of the product. \n\n I am dynamic and results-oriented, striving for excellence and quality when writing software. I can also be involved in the entire software development lifecycle, from frontend to deployment, including the backend. \n\n My quick learning, curiosity, and self-taught attitude allow me to explore multiple areas, but my greatest love is in the backend."
+    description: "I’m a backend developer focused on Java and Spring Boot.\n\n I’ve worked in teams using Scrum, revived and deployed a full application, and I’m currently building a microservices system with hexagonal architecture, JWT security and tests.\n I also have experience with React and Node.js. I’m studying a Programming degree at UTN and have C1 English."
   }
 };
 
@@ -35,29 +35,7 @@ const t=texts[language];
                                 </p>
                         </div>
                         
-                        <div className="flex mt-10 items-center gap-7 flex-wrap md:flex-nowrap">
-                            <div className="bg-gray-800/40 p-8 rounded-lg">
-                                <h3 className="md:text-4xl text-2xl font-semibold text-white">10
-                                    <span>+</span>
-                                </h3>
-                                <p className="text-xs md:text-base"> <span>{language === "es" ? "Proyectos": "Projects" }</span> </p>
-                            </div>
-
-                            <div className="bg-gray-800/40 p-5 rounded-lg">
-                                <h3 className="md:text-4xl text-2xl font-semibold text-white">2
-                                    <span>+</span>
-                                </h3>
-                                <p className="text-xs md:text-base"> <span> {language === "es" ? "Años de experiencia" : "years of experience" }</span> </p>
-                            </div>
-
-                            <div className="bg-gray-800/40 p-4 md:p-5 rounded-lg">
-                                <h3 className="md:text-4xl text-2xl font-semibold text-white">{language === "es" ? "Varios" : "Several" } 
-                            
-                                </h3>
-                                <p className="text-xs md:text-base"> <span>{language === "es" ? "Clientes Satisfechos" : "Happy Clients" }  </span> </p>
-                            </div>
-
-                        </div>
+                      
                         
                     </div>
 
